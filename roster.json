@@ -2,28 +2,28 @@
   {
     "day":1,
     "hour":4,
-    "class":"Engels",
+    "class":"Engels ",
     "prof":"Martens",
     "location":""
   },
   {
     "day":1,
     "hour":5,
-    "class":"Engels",
+    "class":"Engels ",
     "prof":"Martens",
     "location":""
   },
   {
     "day":1,
     "hour":6,
-    "class":"Engels",
+    "class":"Engels ",
     "prof":"Martens",
     "location":""
   },
   {
     "day":2,
     "hour":3,
-    "class":"BSysB",
+    "class":"BSysB  ",
     "prof":"Vermeulen",
     "location":""
   },
@@ -44,23 +44,23 @@
   {
     "day":2,
     "hour":6,
-    "class":"Labo C#DB/Labo WT2",
+    "class":"LC#DB/LWT2",
     "prof":"Demeester/Verbeeck/Ve",
-    "location":"Labo Info 4"
+    "location":"LInfo 4"
   },
   {
     "day":3,
     "hour":3,
     "class":"LWin/LinServ",
     "prof":"Vermeulen",
-    "location":"Labo Info 1"
+    "location":"LInfo 1"
   },
   {
     "day":3,
     "hour":4,
     "class":"LWin/LinServ",
     "prof":"Vermeulen",
-    "location":"Labo Info 1"
+    "location":"LInfo 1"
   },
   {
     "day":3,
@@ -79,28 +79,28 @@
   {
     "day":4,
     "hour":4,
-    "class":"Frans",
+    "class":"Frans  ",
     "prof":"Bracke",
     "location":""
   },
   {
     "day":4,
     "hour":5,
-    "class":"Frans",
+    "class":"Frans  ",
     "prof":"Bracke",
     "location":""
   },
   {
     "day":5,
     "hour":1,
-    "class":"Labo WebScripten 2",
+    "class":"LWebScripten 2",
     "prof":"Vanderl/Maervoet",
     "location":""
   },
   {
     "day":5,
     "hour":2,
-    "class":"Labo WebScripten 2",
+    "class":"LWebScripten 2",
     "prof":"Vanderl/Maervoet",
     "location":""
   }
