@@ -17,15 +17,16 @@ var getHour = function(i) {
 
 var askedDay = getDayInt(process.argv[2]) || "all";
 
-var print = function() {
+var prettify = function(table) {
   var total = [];
-  roster.forEach(function(s) {
+  table.forEach(function(s) {
     if (askedDay === "all" || askedDay == s.day) {
       total.push([getDayStr(s.day),getHour(s.hour),s.class,s.location,s.prof]);
     };
   });
-  console.table(total);
-  ;
+  return total;
 }
 
-print();
+var parsed = prettify(roster);
+
+console.table(parsed);
