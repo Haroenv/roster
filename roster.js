@@ -19,7 +19,7 @@ var askedDay = getDayInt(process.argv[2]) || "all";
 var print = function() {
   roster.forEach(function(s) {
     if (askedDay === "all" || askedDay == s.day) {
-      console.log(getDayStr(s.day)+"  "+getHour(s.hour)+"  "+s.class+"\t"+s.location+"\t"+s.prof);
+      console.log(getDayStr(s.day)+"\t"+getHour(s.hour)+"\t"+s.class+"\t"+s.location+"\t"+s.prof);
     };
   });
   ;
