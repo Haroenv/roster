@@ -18,13 +18,13 @@ var getHour = function(i) {
 var askedDay = getDayInt(process.argv[2]) || "all";
 
 var print = function() {
+  var total = [];
   roster.forEach(function(s) {
     if (askedDay === "all" || askedDay == s.day) {
-      console.log([getDayStr(s.day),getHour(s.hour),s.class,s.location,s.prof]);
-      // console.table([getDayStr(s.day),getHour(s.hour),s.class,s.location,s.prof]);
-      // console.log(getDayStr(s.day)+"\t"+getHour(s.hour)+"\t"+s.class+"\t"+s.location+"\t"+s.prof);
+      total.push([getDayStr(s.day),getHour(s.hour),s.class,s.location,s.prof]);
     };
   });
+  console.table(total);
   ;
 }
 
