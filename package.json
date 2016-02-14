@@ -1,0 +1,18 @@
+{
+  "name": "roster-js",
+  "version": "0.0.2",
+  "description": "A simple roster thingy __not good__",
+  "main": "roster.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/haroenv/roster-js"
+  },
+  "keywords": [
+    "roster"
+  ],
+  "author": "Haroen Viaene",
+  "license": "CC-BY-4.0",
+  "dependencies": {
+    "better-console": "~0.2.4"
+  }
+}

@@ -2,28 +2,28 @@
   {
     "day":1,
     "hour":4,
-    "class":"Engels  ",
+    "class":"Engels",
     "prof":"Martens",
     "location":""
   },
   {
     "day":1,
     "hour":5,
-    "class":"Engels  ",
+    "class":"Engels",
     "prof":"Martens",
     "location":""
   },
   {
     "day":1,
     "hour":6,
-    "class":"Engels  ",
+    "class":"Engels",
     "prof":"Martens",
     "location":""
   },
   {
     "day":2,
     "hour":3,
-    "class":"BSysB   ",
+    "class":"BSysB",
     "prof":"Vermeulen",
     "location":""
   },
@@ -79,14 +79,14 @@
   {
     "day":4,
     "hour":4,
-    "class":"Frans   ",
+    "class":"Frans",
     "prof":"Bracke",
     "location":""
   },
   {
     "day":4,
     "hour":5,
-    "class":"Frans   ",
+    "class":"Frans",
     "prof":"Bracke",
     "location":""
   },
