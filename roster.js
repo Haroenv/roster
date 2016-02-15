@@ -1,6 +1,7 @@
 var console = require('better-console');
 // var url = "https://s.haroen.me/rosters/semester-4.json";
 var roster = require("./example.json");
+var Table = require('cli-table');
 
 var getDayStr = function(i) {
   return ["zo","ma","di","wo","do","vr","za"][i];
@@ -17,6 +18,17 @@ var getHour = function(i) {
 }
 
 var askedDay = getDayInt(process.argv[2]) || "all";
+
+var table = new Table({
+    head: ['Rel', 'Change', 'By', 'When']
+  , colWidths: [6, 21, 25, 17]
+});
+
+table.push(
+    ['v0.1', 'Testing something cool', 'rauchg@gmail.com', '7 minutes ago']
+  , ['v0.1', 'Testing something cool', 'rauchg@gmail.com', '8 minutes ago']
+);
+console.log(table.toString());
 
 var prettyPrint = function(table) {
   table.forEach(function(d) {
