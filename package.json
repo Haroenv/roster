@@ -1,7 +1,7 @@
 {
   "name": "roster-js",
-  "version": "0.0.2",
-  "description": "A simple roster thingy __not good__",
+  "version": "0.1.0",
+  "description": "A simple roster thingy, note that it's __not good__",
   "main": "roster.js",
   "repository": {
     "type": "git",
