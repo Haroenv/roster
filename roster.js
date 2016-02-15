@@ -1,5 +1,5 @@
 var console = require('better-console');
-// var roster = require("https://s.haroen.me/rosters/semester-4.json");
+// var url = "https://s.haroen.me/rosters/semester-4.json";
 var roster = require("https://s.haroen.me/rosters/semester-4.json");
 
 var getDayStr = function(i) {
