@@ -1,6 +1,6 @@
 var console = require('better-console');
 // var url = "https://s.haroen.me/rosters/semester-4.json";
-var roster = require("https://s.haroen.me/rosters/semester-4.json");
+var roster = require("./example.json");
 
 var getDayStr = function(i) {
   return ["zo","ma","di","wo","do","vr","za"][i];
@@ -13,17 +13,21 @@ var getDayInt = function(i) {
 }
 
 var getHour = function(i) {
-  return [" 8u15- 9u45"," 9u45-11u15","11u15-12u45","13u30-15u00","15u00-16u30","16u30-18u00"][i-1];
+  return ["8u15-9u45","9u45-11u15","11u15-12u45","13u30-15u00","15u00-16u30","16u30-18u00"][i-1];
 }
 
 var askedDay = getDayInt(process.argv[2]) || "all";
 
 var prettyPrint = function(table) {
-  table.forEach(function(s) {
+  table.forEach(function(d) {
+    if (askedDay === "all" || askedDay == d.day) {
     var day = [];
-    if (askedDay === "all" || askedDay == s.day) {
-      total.push([getDayStr(s.day),getHour(s.hour),s.class,s.location,s.prof]);
-    };
+     d.classes.forEach(function(h){
+       day.push([getHour(h.hour),h.class,h.prof,h.location]);
+     });
     console.table(day);
+    };
   });
 }
+
+prettyPrint(roster);
