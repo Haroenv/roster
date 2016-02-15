@@ -1,4 +1,3 @@
-var console = require('better-console');
 // var url = "https://s.haroen.me/rosters/semester-4.json";
 var roster = require("./example.json");
 var Table = require('cli-table');
@@ -19,27 +18,18 @@ var getHour = function(i) {
 
 var askedDay = getDayInt(process.argv[2]) || "all";
 
-var table = new Table({
-    head: ['Rel', 'Change', 'By', 'When']
-  , colWidths: [6, 21, 25, 17]
-});
-
-table.push(
-    ['v0.1', 'Testing something cool', 'rauchg@gmail.com', '7 minutes ago']
-  , ['v0.1', 'Testing something cool', 'rauchg@gmail.com', '8 minutes ago']
-);
-console.log(table.toString());
-
 var prettyPrint = function(table) {
   table.forEach(function(d) {
     if (askedDay === "all" || askedDay == d.day) {
-    var day = [];
+    var day = new Table({
+        head: ['hour', 'class', 'prof', 'location'],
+        colWidths: [13,15,23,11]
+    });
      d.classes.forEach(function(h){
        day.push([getHour(h.hour),h.class,h.prof,h.location]);
      });
-    console.table(day);
+    console.log(day.toString());
     };
   });
 }
-
 prettyPrint(roster);

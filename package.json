@@ -13,7 +13,6 @@
   "author": "Haroen Viaene",
   "license": "CC-BY-4.0",
   "dependencies": {
-    "better-console": "~0.2.4",
     "cli-table": "~0.2.0"
   }
 }
