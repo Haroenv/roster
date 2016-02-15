@@ -18,16 +18,12 @@ var getHour = function(i) {
 
 var askedDay = getDayInt(process.argv[2]) || "all";
 
-var prettify = function(table) {
-  var total = [];
+var prettyPrint = function(table) {
   table.forEach(function(s) {
+    var day = [];
     if (askedDay === "all" || askedDay == s.day) {
       total.push([getDayStr(s.day),getHour(s.hour),s.class,s.location,s.prof]);
     };
+    console.table(day);
   });
-  return total;
 }
-
-var parsed = prettify(roster);
-
-console.table(parsed);
