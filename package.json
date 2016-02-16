@@ -5,7 +5,7 @@
   "main": "roster.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/haroenv/roster-js"
+    "url": "git://github.com/haroenv/roster.git"
   },
   "keywords": [
     "roster"
