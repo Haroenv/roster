@@ -1,3 +1,7 @@
+/**
+ * this is the browser version, won't fully work on terminal
+ */
+
 // var url = "https://s.haroen.me/rosters/semester-4.json";
 var roster = require("./example.json");
 // var roster = require(url);
@@ -22,6 +26,11 @@ var getDayInt = function (i) {
     return daysText.indexOf(i);
 };
 
+/**
+ * get the time strings from its index
+ * @param  {int} i index (the nth hour)
+ * @return {string}   a text description of that hour
+ */
 var getHour = function (i) {
     'use strict';
     return hoursText[i - 1];
@@ -29,8 +38,12 @@ var getHour = function (i) {
 
 /**
  * if an argument has been given, only show that day
+ * either command line argument, either a single query string
  */
 var askedDay = getDayInt(process.argv[2]) || "all";
+if (typeof location !== 'undefined') {
+    askedDay = location.search.substr(1) || "all";
+}
 
 /**
  * pretty prints a table
@@ -40,7 +53,8 @@ var askedDay = getDayInt(process.argv[2]) || "all";
 var prettyPrint = function (table, output) {
     'use strict';
     table.forEach(function (d) {
-        if (askedDay === "all" || askedDay === d.day) {
+        // == and not === because one is a string, and the other is an int
+        if (askedDay === "all" || askedDay == d.day) {
             var day = new Table({
                 head: ['hour', 'class', 'prof', 'location'],
                 colWidths: [13, 15, 23, 11]
@@ -66,5 +80,7 @@ prettyPrint(roster);
  * expose the roster and the print method
  * note: not ideal
  */
-window.roster = roster;
-window.prettyPrint = prettyPrint;
+if (typeof window !== 'undefined') {
+    window.roster = roster;
+    window.prettyPrint = prettyPrint;
+}
