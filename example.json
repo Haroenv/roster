@@ -41,7 +41,7 @@
     "hour": 6,
     "class": "LC#DB/LWT2",
     "prof": "Demeester/Verbeeck/Ve",
-    "location": "LInfo 4"
+    "location": "LInfo4"
   }]
 }, {
   "day": 3,
@@ -50,13 +50,13 @@
     "hour": 3,
     "class": "LWin/LinServ",
     "prof": "Vermeulen",
-    "location": "LInfo 1"
+    "location": "LInfo1"
   }, {
     "day": 3,
     "hour": 4,
     "class": "LWin/LinServ",
     "prof": "Vermeulen",
-    "location": "LInfo 1"
+    "location": "LInfo1"
   }, {
     "day": 3,
     "hour": 5,

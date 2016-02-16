@@ -42,7 +42,8 @@ var getHour = function (i) {
  */
 var askedDay = getDayInt(process.argv[2]) || "all";
 if (typeof location !== 'undefined') {
-    askedDay = location.search.substr(1) || "all";
+    //after ?day=
+    askedDay = location.search.substr(5) || "all";
 }
 
 /**
@@ -57,7 +58,7 @@ var prettyPrint = function (table, output) {
         if (askedDay === "all" || askedDay == d.day) {
             var day = new Table({
                 head: ['hour', 'class', 'prof', 'location'],
-                colWidths: [13, 15, 23, 11]
+                colWidths: [13, 14, 19, 8]
             });
             d.classes.forEach(function (h) {
                 day.push([getHour(h.hour), h.class, h.prof, h.location]);

@@ -7,8 +7,15 @@
   }
   pre {
     font-family: Menlo,monospace;
+    overflow: scroll;
+  }
+  @media all and (max-width: 630px) {
+    body {
+      font-size: .6em;
+    }
   }
   </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="mobile-web-app-capable" content="yes" />
   <meta name="theme-color" content="#000000" />
@@ -21,7 +28,23 @@
 </head>
 <h1>rosters</h1>
 <p>by <a href="https://haroen.me">Haroen</a>. Originally intended for terminal, both projects are visible at <a href="https://github.com/haroenv/roster">github.com/haroenv/roster-js</a>.</p>
+<form id="day">
+  <select onchange="this.form.submit()" name="day">
+    <option value="all">all</option>
+    <option value="1">maandag</option>
+    <option value="2">dinsdag</option>
+    <option value="1">woensdag</option>
+    <option value="2">donderdag</option>
+    <option value="5">vrijdag</option>
+  </select>
+</form>
 <script src="bundle.js"></script>
 <script>
+if (typeof location.search.substr(5) !== 'undefined') {
+  document.querySelector('#day option[value="'+location.search.substr(5)+'"]').selected = true;
+}
+document.getElementById('day').addEventListener('submit',function(){
+  console.log("meme");
+});
 window.prettyPrint(window.roster,true);
 </script>
