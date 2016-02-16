@@ -27,6 +27,9 @@ var getHour = function (i) {
     return hoursText[i - 1];
 };
 
+/**
+ * if an argument has been given, only show that day
+ */
 var askedDay = getDayInt(process.argv[2]) || "all";
 
 /**
@@ -47,7 +50,7 @@ var prettyPrint = function (table, output) {
             });
             if (output) {
                 var pre = document.createElement('pre');
-                var text = document.createTextNode(day.toString().replace(/\[3(6|9)m/g,""));
+                var text = document.createTextNode(day.toString().replace(/\u001b\[\d+m/g, ''));
                 pre.appendChild(text);
                 document.body.appendChild(pre);
             } else {
@@ -59,5 +62,9 @@ var prettyPrint = function (table, output) {
 
 prettyPrint(roster);
 
+/**
+ * expose the roster and the print method
+ * note: not ideal
+ */
 window.roster = roster;
 window.prettyPrint = prettyPrint;
