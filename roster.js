@@ -47,7 +47,7 @@ var prettyPrint = function (table, output) {
             });
             if (output) {
                 var pre = document.createElement('pre');
-                var text = document.createTextNode(day.toString());
+                var text = document.createTextNode(day.toString().replace(/\[3(6|9)m/g,""));
                 pre.appendChild(text);
                 document.body.appendChild(pre);
             } else {
