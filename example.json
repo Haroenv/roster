@@ -1,6 +1,16 @@
 [{
   "day": 1,
   "classes": [{
+    "hour": 2,
+    "class": "R&Sess",
+    "prof": "Sanders",
+    "location": "LInfo1"
+  }, {
+    "hour": 3,
+    "class": "R&Sess",
+    "prof": "Sanders",
+    "location": "LInfo1"
+  }, {
     "hour": 4,
     "class": "Engels",
     "prof": "Martens",
@@ -19,85 +29,83 @@
 }, {
   "day": 2,
   "classes": [{
-    "day": 2,
+    "hour": 2,
+    "class": "Bethiek",
+    "prof": "Vanderper",
+    "location": ""
+  }, {
     "hour": 3,
-    "class": "BSysB",
-    "prof": "Vermeulen",
+    "class": "OnderN",
+    "prof": "Peeters",
     "location": ""
   }, {
-    "day": 2,
     "hour": 4,
-    "class": "WebScripten",
-    "prof": "Vanderl/Maerv",
+    "class": "AdvProg",
+    "prof": "Dem/VanA/Verb",
     "location": ""
   }, {
-    "day": 2,
     "hour": 5,
-    "class": "C#DB/WT2",
-    "prof": "Demeester/Verbeeck/Ve",
+    "class": "LAdvProg",
+    "prof": "Dem/Ver",
     "location": ""
   }, {
-    "day": 2,
     "hour": 6,
-    "class": "LC#DB/LWT2",
-    "prof": "Demeester/Verbeeck/Ve",
+    "class": "LAdvProg",
+    "prof": "Dem/Ver",
     "location": "LInfo4"
   }]
 }, {
   "day": 3,
   "classes": [{
-    "day": 3,
-    "hour": 3,
-    "class": "LWin/LinServ",
-    "prof": "Vermeulen",
-    "location": "LInfo1"
-  }, {
-    "day": 3,
     "hour": 4,
-    "class": "LWin/LinServ",
-    "prof": "Vermeulen",
-    "location": "LInfo1"
+    "class": "LDataSec",
+    "prof": "Van Steenberghe",
+    "location": "LInfo2"
   }, {
-    "day": 3,
     "hour": 5,
-    "class": "Projecten",
-    "prof": "Martens",
-    "location": ""
+    "class": "LNetWebS",
+    "prof": "Picalausa",
+    "location": "LInfo4"
   }, {
-    "day": 3,
     "hour": 6,
-    "class": "Projecten",
-    "prof": "Martens",
-    "location": ""
+    "class": "LNetWebS",
+    "prof": "Picalausa",
+    "location": "LInfo4"
   }]
 }, {
   "day": 4,
   "classes": [{
-    "day": 4,
+    "hour": 2,
+    "class": "NetWebS",
+    "prof": "Picalausa",
+    "location": ""
+  }, {
+    "hour": 3,
+    "class": "SoftMeth",
+    "prof": "Dem/Pic",
+    "location": ""
+  }, {
     "hour": 4,
-    "class": "Frans",
+    "class": "DataSec",
+    "prof": "VanSt/San",
+    "location": ""
+  }, {
+    "hour": 5,
+    "class": "Frans2",
     "prof": "Bracke",
     "location": ""
   }, {
-    "day": 4,
-    "hour": 5,
-    "class": "Frans",
+    "hour": 6,
+    "class": "Frans2",
     "prof": "Bracke",
     "location": ""
   }]
 }, {
   "day": 5,
   "classes": [{
-    "day": 5,
     "hour": 1,
-    "class": "LWebScr2",
-    "prof": "Vanderl/Maervoet",
-    "location": ""
-  }, {
-    "day": 5,
-    "hour": 2,
-    "class": "LWebScr2",
-    "prof": "Vanderl/Maervoet",
+    "class": "Proj2",
+    "prof": "",
     "location": ""
   }]
 }]
