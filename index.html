@@ -18,6 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="mobile-web-app-capable" content="yes" />
+  <meta charset="utf-8">
   <meta name="theme-color" content="#000000" />
   <link rel="mask-icon" href="safari-tab-icon.svg" color="#000000">
   <link rel="apple-touch-icon" href="apple-touch-icon.png" />
@@ -40,7 +41,7 @@
 </form>
 <script src="bundle.js"></script>
 <script>
-if (typeof location.search.substr(5) !== 'undefined') {
+if (location.search.substr(5) !== '') {
   document.querySelector('#day option[value="'+location.search.substr(5)+'"]').selected = true;
 }
 document.getElementById('day').addEventListener('submit',function(){
